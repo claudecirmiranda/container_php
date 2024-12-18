@@ -139,7 +139,7 @@ BASE_DIR
 
 5. **Configuração dos Virtual Hosts**
 
-    Inclua os arquivos de configuração da pasta `vhosts.d` fornecidos nesse [link](/Arquitetura-Cloud-NAGEM/Ambiente-Conteinerizado-para-Projetos-PHP/Guia-para-Uso-do-Container/BASE_DIR/vhosts.d).
+    Inclua os arquivos de configuração da pasta `vhosts.d` fornecidos nesse [link](https://github.com/claudecirmiranda/container_php/tree/main/vhosts.d)).
     
 6.  **Suba o Container**
     Execute o comando abaixo para subir o container com o Docker Compose:
