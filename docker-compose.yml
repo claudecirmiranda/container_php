@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  nagem-php:
+    image: gru.ocir.io/grboiw7hzvhq/nagem-php-env:latest
+    container_name: nagem-php-container
+    ports:
+      - "80:80"
+    volumes:
+      - ${BASE_DIR}/SistemasProducao/Web:/srv/www/htdocs
+      - ${BASE_DIR}/SistemasProducao/vhosts.d:/etc/apache2/vhosts.d
+      - ${BASE_DIR}/SistemasProducao/log:/var/log/apache2
+    command: apachectl -D FOREGROUND
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ${BASE_DIR}/initdb:/docker-entrypoint-initdb.d
+
+volumes:
+  mysql-data:
