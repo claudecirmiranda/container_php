@@ -74,6 +74,7 @@ svn checkout https://10.1.0.58/repos/web/intranet/trunk BASE_DIR/SistemasProduca
 svn checkout https://10.1.0.58/repos/web/nagemcombr/trunk BASE_DIR/SistemasProducao/Web/nagemcombr`
 svn checkout https://10.1.0.58/repos/web/administracao/trunk BASE_DIR/SistemasProducao/Web/nagemcombr`
 svn checkout https://10.1.0.58/repos/web/nol/trunk BASE_DIR/SistemasProducao/Web/nagemcombr`
+svn checkout https://10.1.0.58/repos/web/nagemvar/trunk BASE_DIR/SistemasProducao/Web/nagemvar`
 ```
 
 *Obs.: uma opção é usar o [TottoiseSVN](https://tortoisesvn.net/downloads.html)*
